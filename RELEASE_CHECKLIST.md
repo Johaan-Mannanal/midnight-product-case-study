@@ -15,7 +15,7 @@ Complete this before making the repository public. Nothing here has been pushed 
 | Live URL (www.midapp.me) | ✅ OK to include | Already public (product's own README) |
 | Screenshots | ⚠️ None yet | Add only after sanitization (see assets/product-screenshots) |
 | Metrics | ⚠️ Labeled, mostly unverified | the beta/Midnight kept separate; `[TO DO]` where unconfirmed |
-| License | ⛔ Not set | Awaiting your choice (see below) |
+| License | ✅ All rights reserved | Proprietary docs; no reuse granted |
 
 ## Final list to review before you make it public
 - [ ] Confirm every `[TO DO]` is either filled with verified info or intentionally left blank.
@@ -25,7 +25,7 @@ Complete this before making the repository public. Nothing here has been pushed 
 - [ ] Confirm your title and category ownership in CASE_STUDY.md §7.
 - [ ] Add real portfolio + LinkedIn URLs (README, CASE_STUDY).
 - [ ] Add any screenshots — sanitized per the checklist — or leave the folder empty.
-- [ ] Choose a LICENSE (see options below) and add it.
+- [x] LICENSE added (All rights reserved).
 - [ ] Re-read every doc once for tone: no co-founder conflict, no overstated claims, no fake stats.
 - [ ] Optional: run a secret scan (`gitleaks detect`) as a final backstop.
 
