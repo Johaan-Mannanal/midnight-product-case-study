@@ -19,8 +19,8 @@
                          │               │               │
              ┌───────────▼──┐   ┌────────▼────────┐  ┌───▼──────────────────┐
              │ Auth          │   │ Database        │  │ AI routing layer     │
-             │ (Supabase)    │   │ (Supabase/       │  │ (Vercel AI SDK →     │
-             │               │   │  Postgres)      │  │  multiple providers) │
+             │ (WorkOS)      │   │ (PostgreSQL /   │  │ (Vercel AI SDK to    │
+             │               │   │  Supabase)      │  │  multiple providers) │
              └───────────────┘   └─────────────────┘  └───┬──────────────────┘
                                                           │
                                           ┌───────────────▼───────────────┐
@@ -36,21 +36,21 @@
 A rendered version is in [assets/architecture-diagram.png](assets/architecture-diagram.png).
 
 ## Components (generalized)
-- **Frontend** — Next.js 15 / React 19 single web application; component library built on Radix
+- **Frontend**: Next.js 15 / React 19 single web application; component library built on Radix
   UI primitives with Tailwind CSS; server state via TanStack Query.
-- **Application backend** — server-side routes handling requests, orchestration, and access to
+- **Application backend**: server-side routes handling requests, orchestration, and access to
   data and model providers.
-- **Authentication** — managed auth via **WorkOS (AuthKit)**.
-- **Database** — PostgreSQL (Supabase). *Schema intentionally omitted.*
-- **Caching / rate limiting** — Redis (Upstash).
-- **AI routing layer** — a single interface over **multiple model providers** (OpenAI, Groq,
+- **Authentication**: managed auth via **WorkOS (AuthKit)**.
+- **Database**: PostgreSQL (Supabase). *Schema intentionally omitted.*
+- **Caching / rate limiting**: Redis (Upstash).
+- **AI routing layer**: a single interface over **multiple model providers** (OpenAI, Groq,
   Cerebras, Fireworks AI) via the Vercel AI SDK, so requests can be served by different providers.
   *Routing logic and prompts omitted.*
-- **Background jobs** — long-running AI work (grading, generation, tutoring artifacts, generated
+- **Background jobs**: long-running AI work (grading, generation, tutoring artifacts, generated
   media) runs asynchronously via **Trigger.dev** so the UI stays responsive; progress is tracked
   and completion triggers notifications.
-- **Monitoring & analytics** — error tracking (Sentry) and product analytics (PostHog).
-- **Delivery** — monorepo (Turborepo + Yarn workspaces), deployed on Vercel, with staging used to
+- **Monitoring & analytics**: error tracking (Sentry) and product analytics (PostHog).
+- **Delivery**: monorepo (Turborepo + Yarn workspaces), deployed on Vercel, with staging used to
   validate configuration and deploys before production.
 
 ## Verified technology stack
@@ -64,7 +64,7 @@ Confirmed by inspecting the private repository's manifests (library names are no
 | Auth | WorkOS (AuthKit) |
 | Database | PostgreSQL (Supabase) |
 | Caching / rate limiting | Redis (Upstash) |
-| AI | Multi-provider LLM integration via the Vercel AI SDK — OpenAI, Groq, Cerebras, Fireworks AI (Llama, GPT-OSS, and GLM model families) |
+| AI | Multi-provider LLM integration via the Vercel AI SDK: OpenAI, Groq, Cerebras, Fireworks AI (Llama, GPT-OSS, and GLM model families) |
 | Background jobs | Trigger.dev (long-running AI tasks) |
 | Email | Resend / React Email |
 | Analytics & monitoring | PostHog, Sentry |

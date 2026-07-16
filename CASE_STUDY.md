@@ -1,8 +1,8 @@
-# Midnight — Full Case Study
+# Midnight: Full Case Study
 
 > Documentation-only. No production source code, user data, or secrets. Product-analytics figures
 > are founder-reported and aggregated. Historical **the beta** figures and current **Midnight**
-> figures are kept separate — see [METRICS.md](METRICS.md).
+> figures are kept separate, see [METRICS.md](METRICS.md).
 
 ## 1. Executive summary
 Midnight is an AI-powered student success platform ([www.midapp.me](https://www.midapp.me)) that
@@ -10,9 +10,9 @@ helps students turn scattered academic inputs into finished work through AI-assi
 quiz generation, flashcards, tutoring, and Canvas LMS integration. It is a rebuild and relaunch of
 an earlier product, **the beta**. Working in close coordination with a co-founder, I led product
 planning, user research, development priorities, testing, and marketing strategy, and served as the
-lead engineer and top code contributor (**1,684 of 3,607 commits, ~47%** — verified from the
+lead engineer and top code contributor (**1,684 of 3,607 commits, ~47%**, verified from the
 private repository). This case study documents the product problem, the the beta→Midnight transition,
-my responsibilities, the technical approach, and honest results and limitations — without exposing
+my responsibilities, the technical approach, and honest results and limitations, without exposing
 proprietary code.
 
 ## 2. The student problem
@@ -23,7 +23,7 @@ Midnight targets that gap with a single, student-first workspace where AI helps 
 *organize* academic work, and where long-running tasks keep progressing in the background.
 
 ## 3. The original the beta product
-the beta was the earlier version of this idea — an AI-assisted academic product for students. It
+the beta was the earlier version of this idea, an AI-assisted academic product for students. It
 validated demand and generated meaningful early traction: **approximately 1,000 live beta users**
 and **more than 10 million social-media views**, built with a team of **~25 contributors** (all
 founder-reported; see [METRICS.md](METRICS.md)).
@@ -41,11 +41,11 @@ features.
 
 ## 6. Midnight product direction
 Midnight is organized around a small set of AI-assisted tools that map to real student tasks:
-- **AI Grader** — assignment feedback and rubric evaluation.
-- **AI Quiz Generator** — quizzes from a topic, with practice/exam modes and resume.
-- **AI Flashcards** — deck generation with spaced repetition (FSRS).
-- **AI Tutor** — a tutoring workspace with interactive artifacts and generated study aids.
-- **Tasks** — assignment tracking with Canvas LMS sync.
+- **AI Grader**: assignment feedback and rubric evaluation.
+- **AI Quiz Generator**: quizzes from a topic, with practice/exam modes and resume.
+- **AI Flashcards**: deck generation with spaced repetition (FSRS).
+- **AI Tutor**: a tutoring workspace with interactive artifacts and generated study aids.
+- **Tasks**: assignment tracking with Canvas LMS sync.
 
 Design principle (from the product's own guidelines): *student work comes first; quiet confidence
 over spectacle; real controls over decoration.* Long AI jobs run in the background so students can
@@ -97,7 +97,7 @@ The platform serves AI features through a **multi-provider routing layer** (Verc
 OpenAI, Groq, Cerebras, and Fireworks AI), with **Upstash Redis** for rate limiting/caching and
 **Trigger.dev** running long AI tasks as background jobs. This architecture supports flexibility
 across model providers and keeps latency and cost manageable. No specific cost-reduction
-percentage is claimed here — see [METRICS.md](METRICS.md).
+percentage is claimed here, see [METRICS.md](METRICS.md).
 
 ## 12. Team and collaboration
 Midnight is built by a team (~13+ contributors in the current repository; ~25 during the the beta
@@ -111,7 +111,7 @@ environment used to validate configuration and deploys before release. Current u
 approximately **400 users** (founder-reported; see [METRICS.md](METRICS.md)).
 
 ## 14. Metrics
-All metrics — labeled, separated by product era, and marked verified/self-reported — live in
+All metrics, labeled, separated by product era, and marked verified/self-reported, live in
 [METRICS.md](METRICS.md). the beta and Midnight numbers are **never combined**.
 
 ## 15. Mistakes and lessons learned

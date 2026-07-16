@@ -1,8 +1,8 @@
-# Midnight — Product Case Study
+# Midnight: Product Case Study
 
 Midnight is an education-technology platform focused on helping students use AI-assisted
 academic tools more effectively. This repository documents the product-development process,
-selected technical decisions, and lessons from rebuilding an earlier alpha product — while
+selected technical decisions, and lessons from rebuilding an earlier alpha product, while
 keeping the production source code private.
 
 > This is a **documentation-only case study**. It contains no production source code, no user
@@ -20,7 +20,7 @@ from an earlier product called **the beta**. Approximately **400 current users**
 
 ## My role
 Led product planning, user research, development priorities, testing, and marketing strategy, in
-close coordination with a co-founder — and served as lead engineer and the top code contributor.
+close coordination with a co-founder, and served as lead engineer and the top code contributor.
 Verified from the private repository: **1,684 of 3,607 commits (~47%)**, the single largest share
 among ~13+ contributors. Category-by-category ownership is in
 [CASE_STUDY.md → My responsibilities](CASE_STUDY.md#7-my-responsibilities).
@@ -35,7 +35,7 @@ create and organize academic work while background jobs keep long tasks moving.
   applying lessons to product design, UX, team structure, and technical infrastructure.
 - Led product planning, user research, development priorities, testing, and marketing strategy.
 - As lead engineer, built across the codebase (AI-assisted grading, quiz/flashcard generation with
-  spaced repetition, tutor workspace, Canvas LMS integration) — top contributor at ~47% of commits.
+  spaced repetition, tutor workspace, Canvas LMS integration), top contributor at ~47% of commits.
 - Worked on the multi-provider AI routing layer serving model requests across providers.
 
 ## Verified results
@@ -43,14 +43,14 @@ create and organize academic work while background jobs keep long tasks moving.
 - Production platform live at **www.midapp.me** with a multi-tool AI workspace.
 - **Predecessor (the beta):** ~1,000 live beta users, 10M+ social-media views, ~25 contributors
   (founder-reported). the beta and Midnight numbers are kept **separate and precisely labeled** in
-  [METRICS.md](METRICS.md) — never combined.
+  [METRICS.md](METRICS.md), never combined.
 
 ## Technology overview
 TypeScript monorepo (Turborepo + Yarn) on **Next.js / React**, **WorkOS** auth, **PostgreSQL
 (Supabase)**, **Redis (Upstash)**, **Redux Toolkit + React Query**, **Tailwind CSS + Radix UI**,
 **Trigger.dev** background jobs, **PostHog + Sentry**, tested with **Playwright + Vitest**, and
 deployed on **Vercel** via **GitHub Actions**. AI: **multi-provider LLM integration** (OpenAI,
-Groq, Cerebras, Fireworks AI — Llama, GPT-OSS, GLM families) via the Vercel AI SDK. A React Native
+Groq, Cerebras, Fireworks AI, Llama, GPT-OSS, GLM families) via the Vercel AI SDK. A React Native
 (Expo) mobile app is part of the product. Full (sanitized) detail in [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Links

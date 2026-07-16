@@ -18,7 +18,7 @@ product and engineering work **without** exposing anything proprietary or sensit
 
 ## Screenshots policy
 Any screenshots added later must:
-- Use **sample or anonymized content** — no real user names, emails, school info, or private
+- Use **sample or anonymized content**: no real user names, emails, school info, or private
   conversations.
 - Exclude admin dashboards, internal analytics IDs, API keys, and proprietary prompts.
 - Be reviewed against the pre-release checklist before being committed.
