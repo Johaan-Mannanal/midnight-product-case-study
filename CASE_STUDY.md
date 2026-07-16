@@ -7,11 +7,13 @@
 ## 1. Executive summary
 Midnight is an AI-powered student success platform ([www.midapp.me](https://www.midapp.me)) that
 helps students turn scattered academic inputs into finished work through AI-assisted grading,
-quiz generation, flashcards, tutoring, and task management. It is a rebuild of an earlier alpha
-product, **the beta**. On the rebuild I served as lead engineer and the top code contributor
-(**1,684 of 3,607 commits, ~47%** — verified from the private repository). This case study
-documents the product problem, the the beta→Midnight transition, my responsibilities, the
-technical approach, and honest results and limitations — without exposing proprietary code.
+quiz generation, flashcards, tutoring, and Canvas LMS integration. It is a rebuild and relaunch of
+an earlier product, **the beta**. Working in close coordination with a co-founder, I led product
+planning, user research, development priorities, testing, and marketing strategy, and served as the
+lead engineer and top code contributor (**1,684 of 3,607 commits, ~47%** — verified from the
+private repository). This case study documents the product problem, the the beta→Midnight transition,
+my responsibilities, the technical approach, and honest results and limitations — without exposing
+proprietary code.
 
 ## 2. The student problem
 Students manage assignments, study materials, deadlines, and feedback across many disconnected
@@ -21,10 +23,11 @@ Midnight targets that gap with a single, student-first workspace where AI helps 
 *organize* academic work, and where long-running tasks keep progressing in the background.
 
 ## 3. The original the beta product
-the beta was the earlier alpha of this idea — an AI-assisted academic tool aimed at students.
-It validated demand and generated meaningful early traction (see the beta metrics in
-[METRICS.md](METRICS.md): reported ~4,000 alpha users, 10M+ social-media views, ~25 contributors).
-*[TO DO: confirm the beta's exact feature scope and launch window.]*
+the beta was the earlier version of this idea — an AI-assisted academic product for students. It
+validated demand and generated meaningful early traction: **approximately 1,000 live beta users**
+and **more than 10 million social-media views**, built with a team of **~25 contributors** (all
+founder-reported; see [METRICS.md](METRICS.md)). *[TO DO: confirm the beta's exact feature scope and
+launch window.]*
 
 ## 4. Problems discovered during the alpha
 The alpha surfaced the usual early-product issues: unclear product focus, features that didn't
@@ -57,17 +60,21 @@ commits). The rest are marked for your confirmation so nothing is overstated.
 | Category | Ownership | Basis |
 |----------|-----------|-------|
 | Engineering (frontend + backend) | **Led** | Verified: 1,684/3,607 commits (~47%), largest share |
-| AI infrastructure (model routing, background jobs) | **Contributed / Co-led** *[TO DO: confirm]* | Stack present in repo; confirm your specific ownership |
-| Product strategy | *Needs confirmation* | [TO DO] |
-| User research | *Needs confirmation* | [TO DO] |
-| Product requirements | *Needs confirmation* | [TO DO] |
-| Analytics | *Needs confirmation* | [TO DO] |
-| Marketing | *Needs confirmation* | [TO DO] |
-| Contributor coordination | *Needs confirmation* | [TO DO] |
-| Launch planning | *Needs confirmation* | [TO DO] |
+| Product planning / strategy | **Led** (with co-founder) | Self-reported |
+| User research | **Led** | Self-reported |
+| Product requirements / development priorities | **Led** | Self-reported |
+| Testing | **Led** | Self-reported (repo also has Playwright/Vitest suites) |
+| Marketing strategy | **Led** | Self-reported |
+| Contributor coordination | **Led / Co-led** | Coordinated ~25 contributors (the beta stage), with co-founder |
+| AI infrastructure (multi-provider routing, background jobs) | **Contributed / Co-led** | Stack verified in repo; confirm exact split |
+| Analytics | **Contributed** *[TO DO: confirm]* | PostHog present in stack |
+| Launch planning | **Co-led** (with co-founder) | Self-reported |
 
-> This case study does **not** claim I personally wrote every part of the application. Midnight
-> is the work of a team of ~13+ contributors; my largest, verifiable contribution is engineering.
+> Work was done in **close coordination with a co-founder**. This case study does not claim I
+> personally built every part of the platform: Midnight is a team effort (~13+ contributors in the
+> current repo; ~25 during the the beta stage). My largest independently verifiable contribution is
+> engineering (top contributor, ~47% of commits); the product/research/testing/marketing leadership
+> above is self-reported.
 
 ## 8. User research and feedback
 Midnight's direction is explicitly student-first, and features map to observed student workflows
@@ -93,23 +100,20 @@ onboarded.]*
 *[TO DO: confirm the single hardest technical problem you personally solved, so it can be
 highlighted here.]*
 
-## 11. AI cost optimization
-A **~70% reduction in AI operational cost** is reported from the the beta era. **This number is not
-yet independently verified in this case study** and should not be published as fact until the
-details below are confirmed. See the verification checklist and before/after table in
-[METRICS.md → AI cost optimization](METRICS.md#ai-cost-optimization).
-
-What can be stated safely today: the current stack integrates **multiple AI model providers**
-behind a routing layer, which is a common enabler of cost control (e.g., routing to
-lower-cost providers for suitable requests). **The specific methods and the exact percentage
-remain `[TO DO: verify]`** — do not state a cause (routing, caching, prompt compression, provider
-change, etc.) until confirmed against real cost data.
+## 11. AI infrastructure
+The platform serves AI features through a **multi-provider routing layer** (Vercel AI SDK over
+OpenAI, Groq, Cerebras, and Fireworks AI), with **Upstash Redis** for rate limiting/caching and
+**Trigger.dev** running long AI tasks as background jobs. This architecture supports flexibility
+across model providers and keeps latency and cost manageable. No specific cost-reduction
+percentage is claimed here; if quantified later, it should be verified first (scope, baseline,
+method) — see [METRICS.md](METRICS.md).
 
 ## 12. Team and collaboration
-Midnight is built by a team (~13+ contributors in the current repository; ~25 reported across the
-the beta era). I was the top code contributor and coordinated closely with other engineers and
-contributors. *[TO DO: confirm co-founder/teammate roles you want represented, described by
-function rather than by name unless they consent to being named.]*
+Midnight is built by a team (~13+ contributors in the current repository; ~25 during the the beta
+stage). I was the top code contributor and worked in **close coordination with a co-founder** on
+product and leadership, while coordinating other engineers and contributors. *[TO DO: confirm how
+you want the co-founder and teammates represented — described by function rather than by name
+unless they consent to being named.]*
 
 ## 13. Launch and growth
 Midnight is live in production at [www.midapp.me](https://www.midapp.me), with a staging

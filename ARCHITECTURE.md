@@ -40,14 +40,16 @@ A rendered version is in [assets/architecture-diagram.png](assets/architecture-d
   UI primitives with Tailwind CSS; server state via TanStack Query.
 - **Application backend** — server-side routes handling requests, orchestration, and access to
   data and model providers.
-- **Authentication** — managed auth (Supabase).
-- **Database** — Supabase / Postgres. *Schema intentionally omitted.*
-- **AI routing layer** — a single interface over **multiple model providers** via the Vercel AI
-  SDK, so requests can be served by different providers. *Routing logic and prompts omitted.*
+- **Authentication** — managed auth via **WorkOS (AuthKit)**.
+- **Database** — PostgreSQL (Supabase). *Schema intentionally omitted.*
+- **Caching / rate limiting** — Redis (Upstash).
+- **AI routing layer** — a single interface over **multiple model providers** (OpenAI, Groq,
+  Cerebras, Fireworks AI) via the Vercel AI SDK, so requests can be served by different providers.
+  *Routing logic and prompts omitted.*
 - **Background jobs** — long-running AI work (grading, generation, tutoring artifacts, generated
-  media) runs asynchronously so the UI stays responsive; progress is tracked and completion
-  triggers notifications.
-- **Monitoring** — error tracking / observability (Sentry).
+  media) runs asynchronously via **Trigger.dev** so the UI stays responsive; progress is tracked
+  and completion triggers notifications.
+- **Monitoring & analytics** — error tracking (Sentry) and product analytics (PostHog).
 - **Delivery** — monorepo (Turborepo + Yarn workspaces), deployed on Vercel, with staging used to
   validate configuration and deploys before production.
 
@@ -56,17 +58,23 @@ Confirmed by inspecting the private repository's manifests (library names are no
 
 | Layer | Technology |
 |-------|-----------|
-| Language / tooling | TypeScript, Turborepo, Yarn workspaces, Prettier, ESLint, Vitest, Husky |
-| Frontend | Next.js 15, React 19, Radix UI, Tailwind CSS, TanStack Query |
-| Auth & data | Supabase (auth + Postgres) |
-| AI | Vercel AI SDK with multiple model providers |
-| Background / async | Background job processing for long AI tasks *[TO DO: confirm which items to name publicly]* |
-| Monitoring | Sentry |
-| Hosting | Vercel |
+| Language / tooling | TypeScript, Node.js, Turborepo, Yarn workspaces, Prettier, ESLint, Husky |
+| Frontend | Next.js, React, Tailwind CSS, Radix UI |
+| State / data-fetching | Redux Toolkit, React Query (TanStack Query) |
+| Auth | WorkOS (AuthKit) |
+| Database | PostgreSQL (Supabase) |
+| Caching / rate limiting | Redis (Upstash) |
+| AI | Multi-provider LLM integration via the Vercel AI SDK — OpenAI, Groq, Cerebras, Fireworks AI (Llama, GPT-OSS, and GLM model families) |
+| Background jobs | Trigger.dev (long-running AI tasks) |
+| Email | Resend / React Email |
+| Analytics & monitoring | PostHog, Sentry |
+| Testing | Playwright (E2E), Vitest (unit) |
+| CI/CD & hosting | GitHub Actions, Vercel |
+| Mobile | React Native (Expo) *(founder-reported; separate from the web repo inspected here)* |
 
 > Interactive/rich tutor features (e.g., graphing, simulations, generated media, knowledge-graph
-> visualization) exist in the product; the specific libraries and implementation are omitted here
-> to keep the case study non-sensitive. *[TO DO: confirm which, if any, you want named publicly.]*
+> visualization) exist in the product; specific libraries and implementation are omitted here to
+> keep the case study non-sensitive.
 
 ## Deliberately omitted (for security and IP)
 - Endpoint names, internal routes, and API contracts

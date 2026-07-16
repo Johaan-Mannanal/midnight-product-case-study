@@ -19,11 +19,12 @@ from an earlier alpha product called **the beta**. Approximately **400 [TO DO: c
 definition — see METRICS.md]** current users.
 
 ## My role
-Lead engineer and the top code contributor on the rebuild. Verified from the private repository:
-**1,684 of 3,607 commits (~47%)** — the single largest share among ~13+ contributors. Detailed,
-category-by-category ownership (product, AI infrastructure, analytics, etc.) is in
+Led product planning, user research, development priorities, testing, and marketing strategy, in
+close coordination with a co-founder — and served as lead engineer and the top code contributor.
+Verified from the private repository: **1,684 of 3,607 commits (~47%)**, the single largest share
+among ~13+ contributors. Category-by-category ownership is in
 [CASE_STUDY.md → My responsibilities](CASE_STUDY.md#7-my-responsibilities).
-*[TO DO: confirm your preferred title — e.g., "Founding Engineer", "Co-founder & Lead Engineer".]*
+*[TO DO: confirm your preferred title — e.g., "Co-founder & Lead Engineer".]*
 
 ## Main problem
 Students juggle assignments, study materials, and deadlines across many disconnected tools.
@@ -31,23 +32,27 @@ Midnight aims to reduce that friction with a single, student-first workspace whe
 create and organize academic work while background jobs keep long tasks moving.
 
 ## Key contributions
-- Led the engineering rebuild from the the beta alpha to the current Midnight platform.
-- Built AI-assisted academic tools (grading, quiz generation, flashcards, tutoring workspace).
-- Worked on the multi-provider AI routing layer that the platform uses to serve model requests.
-- *[TO DO: confirm involvement in AI cost optimization, analytics, and launch — see CASE_STUDY.md.]*
+- Led the rebuild and relaunch from the earlier the beta product to the current Midnight platform,
+  applying lessons to product design, UX, team structure, and technical infrastructure.
+- Led product planning, user research, development priorities, testing, and marketing strategy.
+- As lead engineer, built across the codebase (AI-assisted grading, quiz/flashcard generation with
+  spaced repetition, tutor workspace, Canvas LMS integration) — top contributor at ~47% of commits.
+- Worked on the multi-provider AI routing layer serving model requests across providers.
 
 ## Verified results
-- Top contributor: **1,684 / 3,607 commits (~47%)** (source: private git history).
-- Production platform live at www.midapp.me with a multi-tool AI workspace.
-- Historical the beta alpha and current Midnight metrics are listed **separately and precisely** in
-  [METRICS.md](METRICS.md) — reported numbers (e.g., "4,000 alpha users", "70% AI cost
-  reduction") are labeled and marked for verification; they are **not** combined.
+- **Top contributor: 1,684 / 3,607 commits (~47%)** (source: private git history).
+- Production platform live at **www.midapp.me** with a multi-tool AI workspace.
+- **Predecessor (the beta):** ~1,000 live beta users, 10M+ social-media views, ~25 contributors
+  (founder-reported). the beta and Midnight numbers are kept **separate and precisely labeled** in
+  [METRICS.md](METRICS.md) — never combined.
 
 ## Technology overview
-TypeScript monorepo (Turborepo + Yarn workspaces) on **Next.js 15 / React 19**, **Supabase**
-(auth + database), the **Vercel AI SDK** with multiple model providers, **Radix UI + Tailwind
-CSS**, background job processing, and **Sentry** monitoring, deployed on **Vercel**. Full
-(sanitized) detail in [ARCHITECTURE.md](ARCHITECTURE.md).
+TypeScript monorepo (Turborepo + Yarn) on **Next.js / React**, **WorkOS** auth, **PostgreSQL
+(Supabase)**, **Redis (Upstash)**, **Redux Toolkit + React Query**, **Tailwind CSS + Radix UI**,
+**Trigger.dev** background jobs, **PostHog + Sentry**, tested with **Playwright + Vitest**, and
+deployed on **Vercel** via **GitHub Actions**. AI: **multi-provider LLM integration** (OpenAI,
+Groq, Cerebras, Fireworks AI — Llama, GPT-OSS, GLM families) via the Vercel AI SDK. A React Native
+(Expo) mobile app is part of the product. Full (sanitized) detail in [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Links
 - **Live product:** [www.midapp.me](https://www.midapp.me)

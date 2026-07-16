@@ -12,13 +12,12 @@
 | Code contribution (mine) | Share of total commits authored by me in the current repo | **1,684 / 3,607 commits (~47%)** | repo start → Jul 2026 | Private git history (`git shortlog`) | ✅ Yes (from git) |
 | Contributors (current repo) | Distinct commit authors in the current repo | **~13+** | repo start → Jul 2026 | Private git history | ✅ Yes (from git) |
 
-## Historical — the beta (earlier alpha)
-| Metric | Definition | Value | Period | Source | Verified | Notes |
-|--------|-----------|-------|--------|--------|----------|-------|
-| Alpha users | *[TO DO: define — sign-ups? registered? active?]* | ~4,000 *(reported)* | [TO DO] | [TO DO: analytics / founder recollection] | ❌ Not verified | Label precisely before publishing |
-| Social-media views | *[TO DO: define — video views? impressions? which platform(s)?]* | 10M+ *(reported)* | [TO DO] | [TO DO: platform analytics] | ❌ Not verified | "Views" ≠ "reach" ≠ "impressions" — pick one |
-| Contributors | People who contributed to the beta | ~25 *(reported)* | [TO DO] | [TO DO] | ❌ Not verified | Distinguish code vs non-code contributors |
-| AI cost reduction | See AI cost section below | ~70% *(reported)* | [TO DO] | [TO DO] | ❌ Not verified | Scope of "cost" must be defined |
+## Historical — the beta (earlier product)
+| Metric | Definition | Value | Period | Source | Independently verified | Notes |
+|--------|-----------|-------|--------|--------|------------------------|-------|
+| Live beta users | Users on the the beta beta | **~1,000** | [TO DO: date range] | Product analytics (founder-reported) | Self-reported | Precise label; not combined with Midnight |
+| Social-media views | Video views across social channels | **10M+** | [TO DO: date range] | Platform analytics (founder-reported) | Self-reported | "Views" (not "reach"/"impressions") — confirm platform(s) |
+| Contributors | People who contributed during the the beta stage | **~25** | [TO DO: date range] | Founder-reported | Self-reported | Mix of code and non-code contributors |
 
 ## Current — Midnight
 | Metric | Definition | Value | Period | Source | Verified | Notes |
@@ -35,28 +34,13 @@
 > ⚠️ The "~400" figure must be labeled (e.g., "~400 registered users" **or** "~400 monthly active
 > users") — these mean very different things. Do not present it ambiguously.
 
-## AI cost optimization
-The reported **~70% AI cost reduction** cannot be published as fact until verified. Confirm each
-item below, then fill the table.
+## AI cost / infrastructure (not currently claimed as a headline metric)
+No specific cost-reduction percentage is claimed in this case study. What can be stated safely
+from the stack is architectural: the platform integrates **multiple AI model providers**
+(OpenAI, Groq, Cerebras, Fireworks AI) behind a routing layer via the Vercel AI SDK, and uses
+**Upstash Redis** for rate limiting/caching — both common enablers of cost and latency control.
 
-**Verification checklist**
-- [ ] Scope: is "cost" **AI/model API cost**, **infrastructure**, or **total operational cost**?
-- [ ] Baseline period (before) and comparison period (after)
-- [ ] Cost per request before vs after (or total cost normalized by usage)
-- [ ] Did usage volume/patterns change between periods? (a drop in usage is not an optimization)
-- [ ] Did output quality change? (cheaper but worse is not a clean win)
-- [ ] What caused the reduction? (do not state a method until confirmed — e.g., model routing,
-      caching, prompt compression, response-length limits, batching, provider change, architecture)
-
-**Before / after (fill after verification)**
-| | Baseline (before) | After | Change |
-|--|-------------------|-------|--------|
-| Period | [TO DO] | [TO DO] | — |
-| Cost basis (per request / per user / total) | [TO DO] | [TO DO] | [TO DO] |
-| Normalized cost | [TO DO] | [TO DO] | ~70% ↓ *(reported, unverified)* |
-| Method(s) | — | [TO DO: only if verified] | — |
-| Quality impact | — | [TO DO] | — |
-
-*Observed from the stack (not proof of the number): the platform integrates multiple AI providers
-behind a routing layer, which is a common enabler of cost control. This does not by itself confirm
-the 70% figure or its cause.*
+> If you later want to publish a specific figure (e.g., an earlier "~70% reduction"), verify it
+> first: define scope (AI API vs infrastructure vs total), baseline vs comparison period, whether
+> usage/quality changed, and the specific method — then present a before/after. Until then, keep it
+> qualitative and unquantified. `[TO DO: verify before quantifying]`
