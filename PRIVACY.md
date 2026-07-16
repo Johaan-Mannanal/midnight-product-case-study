@@ -33,5 +33,4 @@ The architecture is **intentionally generalized**. Specific implementation detai
 omitted because the production system is proprietary. See [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Reporting
-If you believe anything here inadvertently exposes sensitive information, please contact the
-maintainer *([TO DO: add contact])* and it will be removed.
+If you believe anything here inadvertently exposes sensitive information, please contact the maintainer via their GitHub profile and it will be removed.

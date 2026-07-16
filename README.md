@@ -15,8 +15,8 @@ flashcards, tutoring, and task management.
 
 ## Current status
 Live in production at **[www.midapp.me](https://www.midapp.me)**. Actively developed; evolved
-from an earlier alpha product called **the beta**. Approximately **400 [TO DO: confirm active-user
-definition — see METRICS.md]** current users.
+from an earlier product called **the beta**. Approximately **400 current users** (see
+[METRICS.md](METRICS.md)).
 
 ## My role
 Led product planning, user research, development priorities, testing, and marketing strategy, in
@@ -24,7 +24,6 @@ close coordination with a co-founder — and served as lead engineer and the top
 Verified from the private repository: **1,684 of 3,607 commits (~47%)**, the single largest share
 among ~13+ contributors. Category-by-category ownership is in
 [CASE_STUDY.md → My responsibilities](CASE_STUDY.md#7-my-responsibilities).
-*[TO DO: confirm your preferred title — e.g., "Co-founder & Lead Engineer".]*
 
 ## Main problem
 Students juggle assignments, study materials, and deadlines across many disconnected tools.
@@ -58,8 +57,6 @@ Groq, Cerebras, Fireworks AI — Llama, GPT-OSS, GLM families) via the Vercel AI
 - **Live product:** [www.midapp.me](https://www.midapp.me)
 - **Full case study:** [CASE_STUDY.md](CASE_STUDY.md)
 - **Architecture:** [ARCHITECTURE.md](ARCHITECTURE.md) · **Metrics:** [METRICS.md](METRICS.md) · **Privacy:** [PRIVACY.md](PRIVACY.md)
-- **Portfolio:** *[TO DO: add URL]*
-- **LinkedIn:** *[TO DO: add URL]*
 
 ---
 *The production source code is private. Specific implementation details have been omitted
