@@ -69,7 +69,7 @@ commits); the product/research/testing/marketing leadership is self-reported.
 | Launch planning | **Co-led** (with co-founder) | Self-reported |
 
 > Work was done in **close coordination with a co-founder**. This case study does not claim I
-> personally built every part of the platform: Midnight is a team effort (~13+ contributors in the
+> personally built every part of the platform: Midnight is a team effort (10+ contributors in the
 > current repo; ~25 during the the beta stage). My largest independently verifiable contribution is
 > engineering (top contributor, ~47% of commits).
 
@@ -100,7 +100,7 @@ across model providers and keeps latency and cost manageable. No specific cost-r
 percentage is claimed here, see [METRICS.md](METRICS.md).
 
 ## 12. Team and collaboration
-Midnight is built by a team (~13+ contributors in the current repository; ~25 during the the beta
+Midnight is built by a team (10+ contributors in the current repository; ~25 during the the beta
 stage). I was the top code contributor and worked in **close coordination with a co-founder** on
 product and leadership, while coordinating other engineers and contributors. Individual teammates
 are referenced by function rather than by name.
@@ -133,4 +133,3 @@ performance work, and growth of the current user base. Specific roadmap details 
 ## 18. Links and media
 - Live product: [www.midapp.me](https://www.midapp.me)
 - Architecture: [ARCHITECTURE.md](ARCHITECTURE.md) · Metrics: [METRICS.md](METRICS.md) · Privacy: [PRIVACY.md](PRIVACY.md)
-- Screenshots: see [assets/product-screenshots/](assets/product-screenshots/)

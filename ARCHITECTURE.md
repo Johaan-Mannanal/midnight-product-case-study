@@ -7,33 +7,21 @@
 ## High-level system
 
 ```
-                 ┌─────────────────────────────────────────────────────────┐
-   Student  ───▶ │  Frontend (Next.js 15 / React 19 web app)               │
-                 │  UI system: Radix UI + Tailwind CSS, TanStack Query     │
-                 └───────────────┬─────────────────────────────────────────┘
-                                 │
-                                 ▼
-                 ┌─────────────────────────────────────────────────────────┐
-                 │  Application backend (server routes / API layer)        │
-                 └───────┬───────────────┬───────────────┬─────────────────┘
-                         │               │               │
-             ┌───────────▼──┐   ┌────────▼────────┐  ┌───▼──────────────────┐
-             │ Auth          │   │ Database        │  │ AI routing layer     │
-             │ (WorkOS)      │   │ (PostgreSQL /   │  │ (Vercel AI SDK to    │
-             │               │   │  Supabase)      │  │  multiple providers) │
-             └───────────────┘   └─────────────────┘  └───┬──────────────────┘
-                                                          │
-                                          ┌───────────────▼───────────────┐
-                                          │ External model APIs           │
-                                          │ (multiple LLM providers)      │
-                                          └───────────────────────────────┘
-                 ┌─────────────────────────────────────────────────────────┐
-                 │ Background jobs (long-running AI tasks) + notifications  │
-                 │ Monitoring / error tracking (Sentry)                    │
-                 └─────────────────────────────────────────────────────────┘
+Student
+  -> Frontend (Next.js / React, Radix UI + Tailwind)
+      -> Application backend (server routes / API layer)
+          -> Authentication (WorkOS)
+          -> Database (PostgreSQL / Supabase)
+          -> Cache and rate limiting (Redis / Upstash)
+          -> AI routing layer (Vercel AI SDK)
+              -> External model APIs (OpenAI, Groq, Cerebras, Fireworks AI)
+
+Cross-cutting: background jobs (Trigger.dev) with progress notifications,
+monitoring (Sentry), product analytics (PostHog).
+Delivery: Turborepo monorepo, GitHub Actions, Vercel, staging then production.
 ```
 
-A rendered version is in [assets/architecture-diagram.png](assets/architecture-diagram.png).
+The rendered diagram is in [assets/architecture-diagram.png](assets/architecture-diagram.png).
 
 ## Components (generalized)
 - **Frontend**: Next.js 15 / React 19 single web application; component library built on Radix

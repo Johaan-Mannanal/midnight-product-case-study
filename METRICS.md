@@ -9,7 +9,10 @@
 | Metric | Definition | Value | Period | Source | Independently verified |
 |--------|-----------|-------|--------|--------|------------------------|
 | Code contribution (mine) | Share of total commits authored by me in the current repo | **1,684 / 3,607 commits (~47%)** | repo start → Jul 2026 | Private git history (`git shortlog`) | ✅ Yes (from git) |
-| Contributors (current repo) | Distinct commit authors in the current repo | **~13+** | repo start → Jul 2026 | Private git history | ✅ Yes (from git) |
+| Contributors (current repo) | Distinct people with commits (26 raw git identities deduplicated, bots excluded) | **10+** | repo start → Jul 2026 | Private git history | ✅ Yes (from git) |
+
+"Founder-reported" and "self-reported" both mean the figure comes from the author (a founder of
+the product) rather than from an independently auditable source.
 
 ## Historical: the beta (earlier product)
 | Metric | Definition | Value | Source | Independently verified |
