@@ -17,18 +17,17 @@ the product) rather than from an independently auditable source.
 ## Historical: the beta (earlier product)
 | Metric | Definition | Value | Source | Independently verified |
 |--------|-----------|-------|--------|------------------------|
-| Live beta users | Users on the the beta beta | **~1,000** | Product analytics (founder-reported) | Self-reported |
+| Registrations | Accounts created on the the beta MVP | **1,500** | Product analytics (founder-reported) | Self-reported |
 | Social-media views | Video views across social channels | **10M+** | Platform analytics (founder-reported) | Self-reported |
 | Contributors | People who contributed during the the beta stage | **~25** | Founder-reported | Self-reported |
 
 ## Current: Midnight
-| Metric | Definition | Value | Source | Independently verified |
-|--------|-----------|-------|--------|------------------------|
-| Current users | Users of the current Midnight platform | **~400** | Product analytics (founder-reported) | Self-reported |
 
-> The "~400" refers to current users of the Midnight platform. A precise active-user definition
-> (registered vs. monthly/weekly/daily active) and detailed retention/growth breakdowns are not
-> published here. the beta and Midnight figures are never combined.
+The rebuilt platform is in **active development and user testing**. Usage counts are deliberately
+not published at this stage: the product is being refined on lessons from the the beta MVP, and
+early-testing numbers would say more about recruiting testers than about the product. Verified
+engineering metrics (contribution share, contributor count) are above. the beta and Midnight
+figures are never combined.
 
 ## AI cost / infrastructure
 No specific cost-reduction percentage is claimed in this case study. What can be stated from the

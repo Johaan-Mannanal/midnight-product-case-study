@@ -24,8 +24,8 @@ Midnight targets that gap with a single, student-first workspace where AI helps 
 
 ## 3. The original the beta product
 the beta was the earlier version of this idea, an AI-assisted academic product for students. It
-validated demand and generated meaningful early traction: **approximately 1,000 live beta users**
-and **more than 10 million social-media views**, built with a team of **~25 contributors** (all
+validated demand and generated meaningful early traction: **1,500 registrations** and
+**more than 10 million social-media views**, built with a team of **~25 contributors** (all
 founder-reported; see [METRICS.md](METRICS.md)).
 
 ## 4. Problems discovered during the beta
@@ -106,9 +106,10 @@ product and leadership, while coordinating other engineers and contributors. Ind
 are referenced by function rather than by name.
 
 ## 13. Launch and growth
-Midnight is live in production at [www.midapp.me](https://www.midapp.me), with a staging
-environment used to validate configuration and deploys before release. Current usage is
-approximately **400 users** (founder-reported; see [METRICS.md](METRICS.md)).
+Midnight is live at [www.midapp.me](https://www.midapp.me), with a staging environment used to
+validate configuration and deploys before release. The rebuilt platform is currently in **user
+testing** while the product is refined on lessons from the the beta MVP; usage counts are not
+published at this stage (see [METRICS.md](METRICS.md)).
 
 ## 14. Metrics
 All metrics, labeled, separated by product era, and marked verified/self-reported, live in

@@ -14,8 +14,9 @@ inputs (assignments, notes, topics) into finished work through tools for grading
 flashcards, tutoring, and task management.
 
 ## Current status
-Live in production at **[www.midapp.me](https://www.midapp.me)**. Actively developed; evolved
-from an earlier product called **the beta**. Approximately **400 current users** (see
+Live at **[www.midapp.me](https://www.midapp.me)** and in active development. The current
+platform is a refined rebuild of an earlier product, **the beta**, applying lessons from that MVP;
+it is currently in user testing, so usage counts are not published yet (see
 [METRICS.md](METRICS.md)).
 
 ## My role
@@ -45,7 +46,7 @@ create and organize academic work while background jobs keep long tasks moving.
 - Production platform live at **www.midapp.me** with a multi-tool AI workspace.
 
 **Reported (founder-reported, not independently verified):**
-- Predecessor (the beta): ~1,000 live beta users, 10M+ social-media views, ~25 contributors.
+- Predecessor (the beta): 1,500 registrations, 10M+ social-media views, ~25 contributors.
 - the beta and Midnight numbers are kept **separate and precisely labeled** in
   [METRICS.md](METRICS.md), never combined.
 
