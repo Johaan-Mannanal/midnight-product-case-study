@@ -26,7 +26,7 @@ Any screenshots added later must:
 ## Metrics policy
 - All metrics are **aggregated**; no user-level data is published.
 - Reported-but-unverified numbers are labeled as such and kept separate by product era
-  (the beta vs Midnight). See [METRICS.md](METRICS.md).
+  (earlier beta vs current platform). See [METRICS.md](METRICS.md).
 
 ## Architecture policy
 The architecture is **intentionally generalized**. Specific implementation details have been

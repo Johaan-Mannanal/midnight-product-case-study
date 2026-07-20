@@ -2,7 +2,7 @@
 
 Midnight is an education-technology platform focused on helping students use AI-assisted
 academic tools more effectively. This repository documents the product-development process,
-selected technical decisions, and lessons from rebuilding an earlier beta product, while
+selected technical decisions, and lessons from rebuilding the platform's earlier beta, while
 keeping the production source code private.
 
 > This is a **documentation-only case study**. It contains no production source code, no user
@@ -15,7 +15,7 @@ flashcards, tutoring, and task management.
 
 ## Current status
 Live at **[www.midapp.me](https://www.midapp.me)** and in active development. The current
-platform is a refined rebuild of an earlier product, **the beta**, applying lessons from that MVP;
+platform is a refined rebuild of Midnight's earlier beta, applying lessons from that MVP;
 it is currently in user testing, so usage counts are not published yet (see
 [METRICS.md](METRICS.md)).
 
@@ -32,7 +32,7 @@ Midnight aims to reduce that friction with a single, student-first workspace whe
 create and organize academic work while background jobs keep long tasks moving.
 
 ## Key contributions
-- Led the rebuild and relaunch from the earlier the beta product to the current Midnight platform,
+- Led the rebuild and relaunch from the earlier beta to the current Midnight platform,
   applying lessons to product design, UX, team structure, and technical infrastructure.
 - Owned the product cycle end to end: planning, user research, prioritization, testing, and marketing.
 - As lead engineer, built across the codebase (AI-assisted grading, quiz/flashcard generation with
@@ -46,8 +46,8 @@ create and organize academic work while background jobs keep long tasks moving.
 - Production platform live at **www.midapp.me** with a multi-tool AI workspace.
 
 **Reported (founder-reported, not independently verified):**
-- Predecessor (the beta): 1,500 registrations, 10M+ social-media views, ~25 contributors.
-- the beta and Midnight numbers are kept **separate and precisely labeled** in
+- Earlier beta (MVP): 1,500 registrations, 10M+ social-media views, ~25 contributors.
+- Beta-era and current numbers are kept **separate and precisely labeled** in
   [METRICS.md](METRICS.md), never combined.
 
 ## Technology overview

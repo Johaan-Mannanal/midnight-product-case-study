@@ -1,7 +1,7 @@
 # Metrics
 
-> **Two different products, kept separate.** the beta (earlier product) and Midnight (current
-> platform) numbers are **never combined**. Each figure is labeled with a definition, value,
+> **Two eras, kept separate.** Figures from the earlier beta and from the current
+> platform are **never combined**. Each figure is labeled with a definition, value,
 > source, and whether it is independently verified. Product-analytics figures are founder-reported
 > and aggregated, no user-level data appears here.
 
@@ -14,19 +14,19 @@
 "Founder-reported" and "self-reported" both mean the figure comes from the author (a founder of
 the product) rather than from an independently auditable source.
 
-## Historical: the beta (earlier product)
+## Historical: the earlier beta
 | Metric | Definition | Value | Source | Independently verified |
 |--------|-----------|-------|--------|------------------------|
-| Registrations | Accounts created on the the beta MVP | **1,500** | Product analytics (founder-reported) | Self-reported |
+| Registrations | Accounts created on the beta MVP | **1,500** | Product analytics (founder-reported) | Self-reported |
 | Social-media views | Video views across social channels | **10M+** | Platform analytics (founder-reported) | Self-reported |
-| Contributors | People who contributed during the the beta stage | **~25** | Founder-reported | Self-reported |
+| Contributors | People who contributed during the beta stage | **~25** | Founder-reported | Self-reported |
 
 ## Current: Midnight
 
 The rebuilt platform is in **active development and user testing**. Usage counts are deliberately
-not published at this stage: the product is being refined on lessons from the the beta MVP, and
+not published at this stage: the product is being refined on lessons from the beta MVP, and
 early-testing numbers would say more about recruiting testers than about the product. Verified
-engineering metrics (contribution share, contributor count) are above. the beta and Midnight
+engineering metrics (contribution share, contributor count) are above. Beta-era and current
 figures are never combined.
 
 ## AI cost / infrastructure

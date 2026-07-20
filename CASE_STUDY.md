@@ -1,17 +1,17 @@
 # Midnight: Full Case Study
 
 > Documentation-only. No production source code, user data, or secrets. Product-analytics figures
-> are founder-reported and aggregated. Historical **the beta** figures and current **Midnight**
+> are founder-reported and aggregated. Beta-era figures and current-platform
 > figures are kept separate, see [METRICS.md](METRICS.md).
 
 ## 1. Executive summary
 Midnight is an AI-powered student success platform ([www.midapp.me](https://www.midapp.me)) that
 helps students turn scattered academic inputs into finished work through AI-assisted grading,
 quiz generation, flashcards, tutoring, and Canvas LMS integration. It is a rebuild and relaunch of
-an earlier product, **the beta**. Working in close coordination with a co-founder, I led product
+the platform's own earlier beta. Working in close coordination with a co-founder, I led product
 planning, user research, development priorities, testing, and marketing strategy, and served as the
 lead engineer and top code contributor (**1,684 of 3,607 commits, ~47%**, verified from the
-private repository). This case study documents the product problem, the the beta→Midnight transition,
+private repository). This case study documents the product problem, the beta-to-rebuild transition,
 my responsibilities, the technical approach, and honest results and limitations, without exposing
 proprietary code.
 
@@ -22,14 +22,14 @@ The result is friction, dead ends, and time lost to tool-management instead of l
 Midnight targets that gap with a single, student-first workspace where AI helps *create* and
 *organize* academic work, and where long-running tasks keep progressing in the background.
 
-## 3. The original the beta product
-the beta was the earlier version of this idea, an AI-assisted academic product for students. It
+## 3. The original beta
+Midnight began as an earlier beta version, an AI-assisted academic product for students. It
 validated demand and generated meaningful early traction: **1,500 registrations** and
 **more than 10 million social-media views**, built with a team of **~25 contributors** (all
 founder-reported; see [METRICS.md](METRICS.md)).
 
 ## 4. Problems discovered during the beta
-The the beta beta surfaced common early-product issues: unclear product focus, features that didn't
+The beta surfaced common early-product issues: unclear product focus, features that didn't
 map cleanly to how students actually work, and operational cost pressure from AI usage. These
 lessons directly shaped the decision to rebuild with a tighter product direction.
 
@@ -63,20 +63,20 @@ commits); the product/research/testing/marketing leadership is self-reported.
 | Product requirements / development priorities | **Led** | Self-reported |
 | Testing | **Led** | Self-reported (repo also has Playwright/Vitest suites) |
 | Marketing strategy | **Led** | Self-reported |
-| Contributor coordination | **Led / Co-led** | Coordinated ~25 contributors (the beta stage), with co-founder |
+| Contributor coordination | **Led / Co-led** | Coordinated ~25 contributors (beta stage), with co-founder |
 | AI infrastructure (multi-provider routing, background jobs) | **Contributed / Co-led** | Stack verified in repo |
 | Analytics | **Contributed** | PostHog present in stack |
 | Launch planning | **Co-led** (with co-founder) | Self-reported |
 
 > Work was done in **close coordination with a co-founder**. This case study does not claim I
 > personally built every part of the platform: Midnight is a team effort (10+ contributors in the
-> current repo; ~25 during the the beta stage). My largest independently verifiable contribution is
+> current repo; ~25 during the beta stage). My largest independently verifiable contribution is
 > engineering (top contributor, ~47% of commits).
 
 ## 8. User research and feedback
 Midnight's direction is explicitly student-first, and features map to observed student workflows:
 turning class inputs into finished work, keeping background tasks moving, and reducing the need to
-switch between tools. Feedback from the the beta stage informed which tools to keep, cut, or rebuild.
+switch between tools. Feedback from the beta stage informed which tools to keep, cut, or rebuild.
 
 ## 9. Product-development process
 - Monorepo with shared packages and a single primary web application.
@@ -100,7 +100,7 @@ across model providers and keeps latency and cost manageable. No specific cost-r
 percentage is claimed here, see [METRICS.md](METRICS.md).
 
 ## 12. Team and collaboration
-Midnight is built by a team (10+ contributors in the current repository; ~25 during the the beta
+Midnight is built by a team (10+ contributors in the current repository; ~25 during the beta
 stage). I was the top code contributor and worked in **close coordination with a co-founder** on
 product and leadership, while coordinating other engineers and contributors. Individual teammates
 are referenced by function rather than by name.
@@ -108,12 +108,12 @@ are referenced by function rather than by name.
 ## 13. Launch and growth
 Midnight is live at [www.midapp.me](https://www.midapp.me), with a staging environment used to
 validate configuration and deploys before release. The rebuilt platform is currently in **user
-testing** while the product is refined on lessons from the the beta MVP; usage counts are not
+testing** while the product is refined on lessons from the beta MVP; usage counts are not
 published at this stage (see [METRICS.md](METRICS.md)).
 
 ## 14. Metrics
 All metrics, labeled, separated by product era, and marked verified/self-reported, live in
-[METRICS.md](METRICS.md). the beta and Midnight numbers are **never combined**.
+[METRICS.md](METRICS.md). Beta-era and current numbers are **never combined**.
 
 ## 15. Mistakes and lessons learned
 - Product focus matters more than feature count; the rebuild narrowed scope to real student tasks.
