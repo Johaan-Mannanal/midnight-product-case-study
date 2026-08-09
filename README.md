@@ -15,9 +15,9 @@ keeping the production source code private.
 > [App-Midnight/product-case-study](https://github.com/App-Midnight/product-case-study).
 
 ## One-sentence description
-Midnight is an AI-powered student success platform that helps students turn scattered class
-inputs (assignments, notes, topics) into finished work through tools for grading, quizzes,
-flashcards, tutoring, and task management.
+Midnight is a personalized AI tutor that turns a student's actual course material into
+grounded explanations, practice, and generated visual lessons, supported by tools for
+grading, quizzes, flashcards, and task management.
 
 ## Current status
 Live at **[www.midapp.me](https://www.midapp.me)** and in active development. The current
@@ -41,8 +41,9 @@ create and organize academic work while background jobs keep long tasks moving.
 - Led the rebuild and relaunch from the earlier beta to the current Midnight platform,
   applying lessons to product design, UX, team structure, and technical infrastructure.
 - Owned the product cycle end to end: planning, user research, prioritization, testing, and marketing.
-- As lead engineer, built across the codebase (AI-assisted grading, quiz/flashcard generation with
-  spaced repetition, tutor workspace, Canvas LMS integration), top contributor at ~47% of commits.
+- As lead engineer, built across the codebase (course-grounded tutor workspace, AI-assisted
+  grading, quiz/flashcard generation with spaced repetition, Canvas LMS integration), top
+  contributor at ~47% of commits.
 - Worked on the multi-provider AI routing layer serving model requests across providers.
 
 ## Results

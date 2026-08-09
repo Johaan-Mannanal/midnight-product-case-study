@@ -6,8 +6,9 @@
 
 ## 1. Executive summary
 Midnight is an AI-powered student success platform ([www.midapp.me](https://www.midapp.me)) that
-helps students turn scattered academic inputs into finished work through AI-assisted grading,
-quiz generation, flashcards, tutoring, and Canvas LMS integration. It is a rebuild and relaunch of
+acts as a personalized AI tutor: it turns a student's actual course material into grounded
+explanations, practice, and generated visual lessons, supported by AI-assisted grading, quiz
+generation, flashcards, and Canvas LMS integration. It is a rebuild and relaunch of
 the platform's own earlier beta. Working in close coordination with a co-founder, I led product
 planning, user research, development priorities, testing, and marketing strategy, and served as the
 lead engineer and top code contributor (**1,684 of 3,607 commits, ~47%**, verified from the
@@ -40,11 +41,14 @@ with a clearer product direction and a cleaner technical foundation. The rebuild
 features.
 
 ## 6. Midnight product direction
-Midnight is organized around a small set of AI-assisted tools that map to real student tasks:
+Midnight leads with the tutor and organizes its other AI-assisted tools around real student
+tasks:
+- **AI Tutor** (the core of the product): a tutoring workspace grounded in the student's own
+  course material, with interactive artifacts, generated study aids, and on-demand visual
+  lessons generated for the exact concept a student is stuck on.
 - **AI Grader**: assignment feedback and rubric evaluation.
 - **AI Quiz Generator**: quizzes from a topic, with practice/exam modes and resume.
 - **AI Flashcards**: deck generation with spaced repetition (FSRS).
-- **AI Tutor**: a tutoring workspace with interactive artifacts and generated study aids.
 - **Tasks**: assignment tracking with Canvas LMS sync.
 
 Design principle (from the product's own guidelines): *student work comes first; quiet confidence
