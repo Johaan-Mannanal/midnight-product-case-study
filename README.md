@@ -1,5 +1,8 @@
 # Midnight: Product Case Study
 
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)](LICENSE)
+![Type: documentation](https://img.shields.io/badge/type-documentation--only-blue)
+
 Midnight is an education-technology platform focused on helping students use AI-assisted
 academic tools more effectively. This repository documents the product-development process,
 selected technical decisions, and lessons from rebuilding the platform's earlier beta, while
