@@ -8,6 +8,9 @@ keeping the production source code private.
 > This is a **documentation-only case study**. It contains no production source code, no user
 > data, and no secrets. See [PRIVACY.md](PRIVACY.md).
 
+> This is my personal, role-focused case study. The team-voiced version lives at
+> [App-Midnight/product-case-study](https://github.com/App-Midnight/product-case-study).
+
 ## One-sentence description
 Midnight is an AI-powered student success platform that helps students turn scattered class
 inputs (assignments, notes, topics) into finished work through tools for grading, quizzes,
