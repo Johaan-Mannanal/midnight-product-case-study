@@ -5,28 +5,26 @@
 > figures are kept separate, see [METRICS.md](METRICS.md).
 
 ## 1. Executive summary
-Midnight is an AI-powered student success platform ([www.midapp.me](https://www.midapp.me)) that
-acts as a personalized AI tutor: it turns a student's actual course material into grounded
+Midnight is a personalized AI tutor ([www.midapp.me](https://www.midapp.me)) that
+turns a student's actual course material into grounded
 explanations, practice, and generated visual lessons, supported by AI-assisted grading, quiz
 generation, flashcards, and Canvas LMS integration. It is a rebuild and relaunch of
-the platform's own earlier beta. Working in close coordination with a co-founder, I led product
+the platform's own earlier beta. As Co-founder and Product/Engineering Lead, I led product
 planning, user research, development priorities, testing, and marketing strategy, and served as the
-lead engineer and top code contributor (**1,684 of 3,607 commits, ~47%**, verified from the
-private repository). This case study documents the product problem, the beta-to-rebuild transition,
+lead engineer in coordination with a co-founder. This case study documents the product problem, the beta-to-rebuild transition,
 my responsibilities, the technical approach, and honest results and limitations, without exposing
 proprietary code.
 
 ## 2. The student problem
-Students manage assignments, study materials, deadlines, and feedback across many disconnected
-tools. The work is fragmented: notes in one place, the LMS in another, study aids in a third.
-The result is friction, dead ends, and time lost to tool-management instead of learning.
-Midnight targets that gap with a single, student-first workspace where AI helps *create* and
-*organize* academic work, and where long-running tasks keep progressing in the background.
+Students need an explanation that fits both their course material and the specific concept
+they are struggling with. Midnight brings that context into the tutoring session, then uses
+generated visual lessons, targeted practice, and comprehension checks to work through the gap.
+Course ingestion, LMS integration, and background jobs support this learning loop.
 
 ## 3. The original beta
 Midnight began as an earlier beta version, an AI-assisted academic product for students. It
 validated demand and generated meaningful early traction: **1,500 registrations** and
-**more than 10 million social-media views**, built with a team of **~25 contributors** (all
+**more than 10 million social-media views**, built with a team of **25 contributors** (all
 founder-reported; see [METRICS.md](METRICS.md)).
 
 ## 4. Problems discovered during the beta
@@ -56,31 +54,32 @@ over spectacle; real controls over decoration.* Long AI jobs run in the backgrou
 navigate away while work completes.
 
 ## 7. My responsibilities
-Ownership by category. **Engineering** is verified from git history (top contributor, ~47% of
-commits); the product/research/testing/marketing leadership is self-reported.
+Ownership by category. Engineering counts come from the author's July 2026 check of private
+git history, not an independent public audit. Product/research/testing/marketing leadership
+is self-reported. See [METRICS.md](METRICS.md) for the snapshot and definitions.
 
 | Category | Ownership | Basis |
 |----------|-----------|-------|
-| Engineering (frontend + backend) | **Led** | Verified: 1,684/3,607 commits (~47%), largest share |
+| Engineering (frontend + backend) | **Led** | July 2026 private-history snapshot: 1,684/3,607 commits (~47%) |
 | Product planning / strategy | **Led** (with co-founder) | Self-reported |
 | User research | **Led** | Self-reported |
 | Product requirements / development priorities | **Led** | Self-reported |
 | Testing | **Led** | Self-reported (repo also has Playwright/Vitest suites) |
 | Marketing strategy | **Led** | Self-reported |
-| Contributor coordination | **Led / Co-led** | Coordinated ~25 contributors (beta stage), with co-founder |
+| Contributor coordination | **Led / Co-led** | Coordinated 25 contributors (beta stage), with co-founder |
 | AI infrastructure (multi-provider routing, background jobs) | **Contributed / Co-led** | Stack verified in repo |
 | Analytics | **Contributed** | PostHog present in stack |
 | Launch planning | **Co-led** (with co-founder) | Self-reported |
 
 > Work was done in **close coordination with a co-founder**. This case study does not claim I
-> personally built every part of the platform: Midnight is a team effort (10+ contributors in the
-> current repo; ~25 during the beta stage). My largest independently verifiable contribution is
-> engineering (top contributor, ~47% of commits).
+> personally built every part of the platform. The July 2026 repository snapshot included 10+
+> code contributors; the broader beta-stage team had 25 contributors. Commit share is historical
+> context, not a measure of engineering quality or sole ownership.
 
 ## 8. User research and feedback
 Midnight's direction is explicitly student-first, and features map to observed student workflows:
-turning class inputs into finished work, keeping background tasks moving, and reducing the need to
-switch between tools. Feedback from the beta stage informed which tools to keep, cut, or rebuild.
+turning course material into grounded explanations, visual lessons, and practice with checks of
+understanding. Feedback from the beta stage informed which tools to keep, cut, or rebuild.
 
 ## 9. Product-development process
 - Monorepo with shared packages and a single primary web application.
@@ -104,8 +103,8 @@ across model providers and keeps latency and cost manageable. No specific cost-r
 percentage is claimed here, see [METRICS.md](METRICS.md).
 
 ## 12. Team and collaboration
-Midnight is built by a team (10+ contributors in the current repository; ~25 during the beta
-stage). I was the top code contributor and worked in **close coordination with a co-founder** on
+Midnight is built by a team (10+ code contributors in the July 2026 snapshot; 25 during the beta
+stage). I worked in **close coordination with a co-founder** on
 product and leadership, while coordinating other engineers and contributors. Individual teammates
 are referenced by function rather than by name.
 
@@ -116,7 +115,7 @@ testing** while the product is refined on lessons from the beta MVP; usage count
 published at this stage (see [METRICS.md](METRICS.md)).
 
 ## 14. Metrics
-All metrics, labeled, separated by product era, and marked verified/self-reported, live in
+All metrics, labeled, separated by product era, and accompanied by their source limitations, live in
 [METRICS.md](METRICS.md). Beta-era and current numbers are **never combined**.
 
 ## 15. Mistakes and lessons learned
