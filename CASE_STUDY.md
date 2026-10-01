@@ -9,7 +9,7 @@ Midnight is a personalized AI tutor ([www.midapp.me](https://www.midapp.me)) tha
 turns a student's actual course material into grounded
 explanations, practice, and generated visual lessons, supported by AI-assisted grading, quiz
 generation, flashcards, and Canvas LMS integration. It is a rebuild and relaunch of
-the platform's own earlier beta. As Co-founder and Product/Engineering Lead, I led product
+the platform's own earlier beta. As Founder and Product/Engineering Lead, I led product
 planning, user research, development priorities, testing, and marketing strategy, and served as the
 lead engineer in coordination with a co-founder. This case study documents the product problem, the beta-to-rebuild transition,
 my responsibilities, the technical approach, and honest results and limitations, without exposing
@@ -87,6 +87,14 @@ understanding. Feedback from the beta stage informed which tools to keep, cut, o
 - Background-job architecture so AI creation tools don't block the UI.
 
 ## 10. Technical challenges
+
+**Decision: separate long-running generation from the foreground learning session.**
+Visual lessons and other AI-generated artifacts can take longer than a normal interface
+request. The system uses Trigger.dev background jobs with progress and completion states,
+so students can navigate while work continues. The trade-off is additional job-state and
+failure handling: the interface must distinguish work in progress, completed output, and
+failed generation. This is an architectural choice, not a measured latency-reduction claim.
+
 - **Long-running AI tasks:** grading, quiz/flashcard generation, and tutoring artifacts can take
   time; the platform runs them as background jobs with progress tracking and completion
   notifications instead of blocking the user.

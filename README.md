@@ -26,7 +26,7 @@ it is currently in user testing, so usage counts are not published yet (see
 [METRICS.md](METRICS.md)).
 
 ## My role
-**Co-founder and Product/Engineering Lead.** Led the rebuild, coordinated 25 contributors across
+**Founder and Product/Engineering Lead.** Led the rebuild, coordinated 25 contributors across
 the project's development, and worked with a co-founder on product planning, user research,
 development priorities, testing, and launch strategy. Category-by-category ownership is in
 [CASE_STUDY.md → My responsibilities](CASE_STUDY.md#7-my-responsibilities).
